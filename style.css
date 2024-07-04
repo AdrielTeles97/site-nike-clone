@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e2e8f0;
+    min-height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d9d9d9;
+    color: #1a1a1a;
+    height: 5rem;
+    padding: 0px 40px 0px 40px;
+}
+
+header > a  {
+    cursor: pointer;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #212121;
+    
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    height: 100px; /* Ajuste conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #181818;
+}
+
+.carousel-item p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid rgb(136, 136, 136);
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+.buttons-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 0.62rem;
+}
+
+.buttons-toggle a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.buttons-toggle button {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 200rem;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+}
+
+.buttons-toggle button:hover {
+    opacity: 0.7;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-details {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+}
+
+.img-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.img-details img {
+    width: 400px;
+}
+
+.text-details {
+    width: 350px;
+    margin-left: 80px;
+}
+
+.text-details span {
+    color: green;
+}
+
+.text-details h5 {
+    margin-bottom: 20px;
+}
+
+
+.assessments {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+
+.assessments img {
+    width: 20px;
+}
+
+.product-sizes {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-sizes span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.product-sizes span > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(146, 146, 146);
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+    color: #000;
+}
+
+.product-sizes span > label:hover {
+    border: 1px solid #000;
+}
+
+.product-sizes input[type="radio"] {
+    display: none;    
+}
+
+.actions-buttons button {
+    margin-top: 20px;
+    width: 100%;
+    display: inline-block;
+    padding: 25px;
+    border-radius: 200rem;
+    outline: none;
+    border: none;
+    background-color: #000;
+    color: #fff; 
+    cursor: pointer;
+}
+
+.actions-buttons button:hover {
+    opacity: 0.7;
+}
+
+.actions-buttons .favorites {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 200rem;
+    outline: none;
+    border: 1px solid rgb(146, 146, 146);
+    background-color: transparent;
+    color: #141414; 
+    cursor: pointer;
+}
+
+.actions-buttons .favorites img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.text-line {
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 70px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.text-line h1 span {
+    color: green;
+    font-size: 55px;
+}
+
+.brasil-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brasil-star img {
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #cdcdcd;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
